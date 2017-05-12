@@ -24,9 +24,7 @@ public class Solutions {
 		System.out.println("\n\nSolution 2\n\n");
 		points.stream()
 		.mapToInt(Coordinate::getX)
-		.peek(System.out::println)
-		.reduce(0, (x1, x2) -> x1 + x2);
-		
+		.forEach(System.out::println);
 		
 		System.out.println("\nSum is: " +points.stream().mapToInt(Coordinate::getX).sum());
 		
