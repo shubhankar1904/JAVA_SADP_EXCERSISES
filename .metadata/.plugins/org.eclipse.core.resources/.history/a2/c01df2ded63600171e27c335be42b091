@@ -22,13 +22,13 @@ public class Solutions {
 		points.forEach(System.out::println);
 		
 		System.out.println("\n\nSolution 2\n\n");
+		points.stream()
+		.mapToInt(Coordinate::getX)
+		.peek(System.out::println)
+		.reduce(0, (x1, x2) -> x1 + x2);
 		
 		
-		
-		System.out.println(points.stream()
-				.mapToInt(Coordinate::getX)
-				.peek(System.out::println)
-				.reduce(0, (x1, x2) -> x1 + x2));
+		System.out.println("\nSum is: " +points.stream().mapToInt(Coordinate::getX).sum());
 		
 		System.out.println("\n\nSolution 3\n\n");
 		System.out.println("Sum of y cords :"+ points.stream()
