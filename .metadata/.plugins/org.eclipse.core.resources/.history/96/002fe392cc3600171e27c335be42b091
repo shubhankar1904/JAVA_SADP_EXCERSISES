@@ -1,0 +1,25 @@
+package solutions;
+
+import java.util.ArrayList;
+
+import coordinate.Coordinate;
+
+public class Questions {
+
+	public static void main(String[] args) {
+		ArrayList<Coordinate> points = new ArrayList<Coordinate>();
+		points.add(new Coordinate(0, 0));
+		points.add(new Coordinate(-1, 1));
+		points.add(new Coordinate(-2, 4));
+		points.add(new Coordinate(-2, -3));
+		points.add(new Coordinate(-10, 2));
+		points.add(new Coordinate(5, -1));
+		points.add(new Coordinate(2, 4));
+		points.add(new Coordinate(1, 0));
+		points.add(new Coordinate(10, 3));
+		
+		System.out.println("Solution 1");
+		points.forEach(System.out::println);
+	}
+
+}
