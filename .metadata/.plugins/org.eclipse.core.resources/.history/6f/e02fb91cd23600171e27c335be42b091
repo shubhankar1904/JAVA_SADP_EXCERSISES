@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+import excersise1.Coordinate;
+
 public class Solutions {
 
 	public static void main(String[] args) {
